@@ -95,6 +95,8 @@ class ImageEditorViewController: UIViewController {
             for label in labels {
                 
                 let predLabelAttributes = [NSAttributedString.Key.foregroundColor: UIColor.getRandomColor,
+                                           NSAttributedString.Key.strokeColor: UIColor.getRandomColor,
+                                           NSAttributedString.Key.strokeWidth: -2,
                                            NSAttributedString.Key.paragraphStyle: paragraphStyle] as [NSAttributedString.Key : Any]
                 
                 let predictionText: NSMutableAttributedString = NSMutableAttributedString(string: "\(label.text)  -\n", attributes: predLabelAttributes)
