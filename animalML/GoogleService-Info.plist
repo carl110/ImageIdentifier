@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>185363889769-cqb8sfcfn9flc9vjoohephbjo0vgqm91.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.185363889769-cqb8sfcfn9flc9vjoohephbjo0vgqm91</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCLL7Tw7jDYRRRLXgahEFUipRE_9pwNqMs</string>
+	<key>GCM_SENDER_ID</key>
+	<string>185363889769</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.carlwainwright.animalML</string>
+	<key>PROJECT_ID</key>
+	<string>ml-kit-f2f20</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ml-kit-f2f20.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:185363889769:ios:5998ae168f5a5a08272cf8</string>
+	<key>DATABASE_URL</key>
+	<string>https://ml-kit-f2f20.firebaseio.com</string>
+</dict>
+</plist>

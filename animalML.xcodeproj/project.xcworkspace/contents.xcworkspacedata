@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:animalML.xcodeproj">
+      location = "group:ImageClassifier.mlmodel">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
