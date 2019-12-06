@@ -23,10 +23,10 @@ extension UIView {
         overlay = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height))
         
         //set see through
-        overlay?.backgroundColor = UIColor.black.withAlphaComponent(0.7)
+        overlay?.backgroundColor = UIColor.black.withAlphaComponent(1)
         
         //add subviews to full window
-        let currentWindow: UIWindow? = UIApplication.shared.keyWindow
+        let currentWindow = UIApplication.shared.windows.first { $0.isKeyWindow }
         
         //set tags to allow removoval from superview
         overlay?.tag = 1
@@ -38,7 +38,7 @@ extension UIView {
     func removeBlakcOverLay() {
         
         //remove subviews using tags assigned
-        let currentWindow: UIWindow? = UIApplication.shared.keyWindow
+        let currentWindow = UIApplication.shared.windows.first { $0.isKeyWindow }
         currentWindow?.viewWithTag(1)?.removeFromSuperview()
         currentWindow?.viewWithTag(2)?.removeFromSuperview()
     }

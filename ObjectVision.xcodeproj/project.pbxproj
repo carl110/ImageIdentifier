@@ -279,7 +279,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 890CEF9923952F150079008A /* Build configuration list for PBXProject "animalML" */;
+			buildConfigurationList = 890CEF9923952F150079008A /* Build configuration list for PBXProject "ObjectVision" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -558,7 +558,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		890CEF9923952F150079008A /* Build configuration list for PBXProject "animalML" */ = {
+		890CEF9923952F150079008A /* Build configuration list for PBXProject "ObjectVision" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				890CEFB323952F1D0079008A /* Debug */,

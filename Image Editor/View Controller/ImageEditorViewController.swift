@@ -27,7 +27,7 @@ class ImageEditorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.blackOverlay(loadingIconText: "Analyzing your Image...")
+        self.view.blackOverlay(loadingIconText: "Analyzing...")
         //Set image and add coloured frame
         photoToCheck.image = viewModel.photo.imageWithBorder(width: 15, color: UIColor.Shades.standardBlack)
         
@@ -35,9 +35,7 @@ class ImageEditorViewController: UIViewController {
             //Run prediction function
             self.predict(img: self.viewModel.photo)
         }
-        
-        
-        
+
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "drawings")!)
         
         predictionLabel.numberOfLines = 0
@@ -55,7 +53,6 @@ class ImageEditorViewController: UIViewController {
         }
     }
     
-    
     func predict(img: UIImage) {
         
         //Set containers to append attributed text to
@@ -70,12 +67,12 @@ class ImageEditorViewController: UIViewController {
         let predTitleTextAttributes = [NSAttributedString.Key.underlineStyle: NSUnderlineStyle.single.rawValue,
                                        NSAttributedString.Key.paragraphStyle: paragraphStyle,
                                        NSAttributedString.Key.strokeColor: UIColor.Yellows.lightYellow,
-                                       NSAttributedString.Key.strokeWidth: 4,
+                                       NSAttributedString.Key.strokeWidth: -4,
                                        NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: predictionLabel.frame.size.width / 8)] as [NSAttributedString.Key : Any]
         
         //Add attributes tpo text
         let predText = NSAttributedString(string: "OBJECT", attributes: predTitleTextAttributes)
-        let predPercText = NSAttributedString(string: "PERCENTAGE", attributes: predTitleTextAttributes)
+        let predPercText = NSAttributedString(string: "CERTAINTY", attributes: predTitleTextAttributes)
         let titleGap = NSAttributedString(string: "\n\n")
         
         //Append text to containers
